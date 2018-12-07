@@ -1,0 +1,12 @@
+{
+  "name": "saharsh.benchmarks.node.type-script",
+  "version": "0.0.0",
+  "description": "Saharsh.Benchmarks.Node.TypeScript",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.14"
+  }
+}
