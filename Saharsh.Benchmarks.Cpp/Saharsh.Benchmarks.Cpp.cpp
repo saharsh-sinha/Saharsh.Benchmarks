@@ -4,9 +4,33 @@
 #include "pch.h"
 #include <iostream>
 
+#include "RegisterCentral.h"
+
+using namespace std;
+
 int main()
 {
     std::cout << "Hello World!\n"; 
+
+	int lookups = 10000000;
+	int sum1 = 0;
+
+	int sum2 = 0;
+	RegisterCentral* regC = new RegisterCentral();
+	std::clock_t c_start = std::clock();
+	sum1 = regC->getStraightSumofLookups(lookups);
+	std::cout << sum1 << std::endl;
+	std::cout << 1000 * float(clock() - c_start) / CLOCKS_PER_SEC << std::endl;
+	
+	c_start = std::clock();
+	sum2 = regC->getSumByRefLookup(lookups);
+	std::cout << sum2 << std::endl;
+	std::cout << 1000 * float(clock() - c_start) / CLOCKS_PER_SEC << std::endl;;
+
+	c_start = std::clock();
+	sum1 = regC->getSumByValLookup(lookups);
+	std::cout << sum1 << std::endl;
+	std::cout << 1000 * float(clock() - c_start) / CLOCKS_PER_SEC << std::endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

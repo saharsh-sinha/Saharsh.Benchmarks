@@ -11,4 +11,10 @@
 
 // TODO: add headers that you want to pre-compile here
 
+#include <iostream>
+#include <iomanip>
+#include <chrono>
+#include <ctime>
+#include <thread>
+
 #endif //PCH_H
