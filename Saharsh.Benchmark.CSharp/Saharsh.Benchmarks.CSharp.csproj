@@ -43,14 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileIO.cs" />
-    <Compile Include="IBenchmarkable.cs" />
-    <Compile Include="Loops.cs" />
+    <Compile Include="Contenders\Texts\LargeContentCreation\LargeContentCreationContenders.cs" />
+    <Compile Include="Contenders\Texts\LargeContentCreation\PureStringBuilder.cs" />
+    <Compile Include="Contenders\Texts\LargeContentCreation\TemplateBasedStringBuilder.cs" />
+    <Compile Include="Evaluators\Benchmark.cs" />
+    <Compile Include="Evaluators\BenchmarkBase.cs" />
+    <Compile Include="Evaluators\BenchmarkParameters.cs" />
+    <Compile Include="Contenders\FileIO\FileIO.cs" />
+    <Compile Include="Evaluators\ContenderBase.cs" />
+    <Compile Include="Evaluators\ContenderCandidates.cs" />
+    <Compile Include="Evaluators\IContender.cs" />
+    <Compile Include="Contenders\lib\MergeSort.cs" />
+    <Compile Include="Contenders\Iterations\Loops.cs" />
+    <Compile Include="Contenders\Calcs\MathMax.cs" />
+    <Compile Include="Evaluators\Runner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Contenders\Sorting\MergeSort.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

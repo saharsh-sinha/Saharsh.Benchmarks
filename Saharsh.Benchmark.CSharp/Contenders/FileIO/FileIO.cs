@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rishu.Benchmarks.CSharp
+namespace Saharsh.Benchmarks.CSharp
 {
-    internal class FileIO : IBenchmarkable
+    internal class FileIO : IContender
     {
-        public float Run(int limit)
+        public long Run(BenchmarkParameters n)
         {
             throw new NotImplementedException();
         }
