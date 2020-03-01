@@ -1,9 +1,4 @@
 ﻿using Saharsh.Benchmarks.CSharp.Evaluators;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Saharsh.Benchmarks.CSharp.Contenders.Texts.LargeContentCreation
 {
@@ -14,6 +9,7 @@ namespace Saharsh.Benchmarks.CSharp.Contenders.Texts.LargeContentCreation
         {
             Candidates.Add(new PureStringBuilder(parameters));
             Candidates.Add(new TemplateBasedStringBuilder(parameters));
+            Candidates.Add(new TemplateBasedArrayStringBuilder(parameters));
         }
     }
 }
